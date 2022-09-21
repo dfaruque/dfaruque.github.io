@@ -1,16 +1,63 @@
 body {
     font-family: 'Courier New', Courier, monospace;
+    background-color: #bebebe;
+    color: #eee;
+}
+
+header {
     text-align: center;
+}
+
+.card-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #007f7f;
+    box-shadow: 0 0 7pt 3pt #5d5d5d;
+    padding: 15pt;
+}
+
+@media (min-width:400pt) {
+    .card-holder {
+        height: 90vh;
+    }
+
+    .main-card {
+        width: 400pt;
+    }
+
+}
+
+.profile-photo {
+    border-radius: 100%;
+    filter: grayscale(100%);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
 }
 
 .footer-social-links {
     list-style-type: none;
 }
 
-.footer-social-links li {
-    display: inline-block;
+.footer-social-links a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #eee;
+    margin: 10pt;
 }
 
 .footer-social-logo {
-    width: 32px;
+    width: 20pt;
+    background-color: #ccc;
+    border-radius: 3pt;
+    margin-right: 5pt;
 }
