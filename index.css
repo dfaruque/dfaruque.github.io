@@ -57,7 +57,7 @@ footer {
 
 .footer-social-logo {
     width: 20pt;
-    background-color: #ccc;
+    /* background-color: #ccc; */
     border-radius: 3pt;
     margin-right: 5pt;
 }
